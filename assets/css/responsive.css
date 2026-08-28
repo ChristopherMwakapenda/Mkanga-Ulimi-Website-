@@ -803,3 +803,157 @@ font-size:26px;
   .advisory-card-content h3{font-size:18px;line-height:1.2;}
   .advisory-card-content p{font-size:12.5px;line-height:1.5;}
 }
+
+/* ==================================================
+   ABOUT PAGE — MOBILE READABILITY REFINEMENT
+   Keep content wide and comfortable; do not squeeze
+   long-form paragraphs into narrow columns.
+================================================== */
+@media (max-width: 600px){
+  .about-story,
+  .about-purpose,
+  .values-section,
+  .founder-section{
+    width: 94% !important;
+    max-width: 94% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Main story: image first, then a full-width text column. */
+  .about-story{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    margin-top: 38px !important;
+    margin-bottom: 42px !important;
+    align-items: stretch !important;
+  }
+
+  .about-story-image,
+  .about-story-content{
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .about-story-image img{
+    width: 100% !important;
+    height: 260px !important;
+    object-fit: cover !important;
+    border-radius: 16px !important;
+  }
+
+  .about-story-content h2{
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .about-story-content p:not(.section-label){
+    width: 100% !important;
+    max-width: none !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* Journey / approach / vision / mission: one readable card at a time. */
+  .about-purpose{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .about-purpose-card{
+    width: 100% !important;
+    padding: 30px 24px !important;
+    text-align: left !important;
+  }
+
+  .about-purpose-icon{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .about-purpose-card h2{
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .about-purpose-card p:not(.section-label){
+    width: 100% !important;
+    max-width: none !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 14px !important;
+  }
+
+  /* Core values: retain two columns, but give each card comfortable text width. */
+  .values-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+
+  .value-card{
+    padding: 22px 14px !important;
+    min-width: 0 !important;
+  }
+
+  .value-card h3{
+    font-size: 16px !important;
+    line-height: 1.25 !important;
+  }
+
+  .value-card p{
+    font-size: 12.5px !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Founder section: full-width readable biography. */
+  .founder-section{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 42px 3% !important;
+  }
+
+  .founder-image,
+  .founder-content{
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .founder-image img{
+    width: 100% !important;
+    height: auto !important;
+    max-height: 360px !important;
+    object-fit: cover !important;
+  }
+
+  .founder-content h2{
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .founder-content p:not(.section-label){
+    width: 100% !important;
+    max-width: none !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media (max-width: 380px){
+  .about-story-content h2,
+  .founder-content h2{font-size: 27px !important;}
+  .about-purpose-card h2{font-size: 23px !important;}
+  .about-story-content p:not(.section-label),
+  .about-purpose-card p:not(.section-label),
+  .founder-content p:not(.section-label){font-size: 14px !important;}
+}
