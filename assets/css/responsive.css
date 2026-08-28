@@ -1,0 +1,805 @@
+/* =================================
+   MKANGA-ULIMI FARM
+   RESPONSIVE DESIGN
+================================= */
+
+
+
+@media(max-width:900px){
+
+
+
+/* HEADER */
+
+
+header{
+
+padding:15px 5%;
+
+}
+
+
+
+nav{
+
+gap:15px;
+
+}
+
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+
+.cards,
+.product-grid,
+.services-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+
+.about-container{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+/* HEADER */
+
+
+header{
+
+flex-direction:row;
+
+justify-content:space-between;
+
+}
+
+
+
+.logo-area img{
+
+width:50px;
+
+height:50px;
+
+}
+
+
+
+.logo-area h2{
+
+font-size:18px;
+
+}
+
+
+
+
+
+/* MOBILE MENU */
+
+
+.menu-icon{
+
+display:block;
+
+color:#2e7d32;
+
+}
+
+
+
+
+nav{
+
+display:none;
+
+position:absolute;
+
+top:75px;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+flex-direction:column;
+
+padding:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+
+
+nav.active{
+
+display:flex;
+
+}
+
+
+
+nav a{
+
+padding:12px;
+
+border-bottom:1px solid #eee;
+
+}
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+height:75vh;
+
+}
+
+
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+
+
+.hero p{
+
+font-size:17px;
+
+}
+
+
+
+button{
+
+width:90%;
+
+margin:8px;
+
+}
+
+
+
+
+
+/* SECTIONS */
+
+
+section{
+
+padding:45px 5%;
+
+}
+
+
+
+section h2{
+
+font-size:28px;
+
+}
+
+
+
+
+
+/* CARDS */
+
+
+.cards,
+.product-grid,
+.services-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.product-card img{
+
+
+height:220px;
+
+
+}
+
+
+
+
+
+
+/* ABOUT */
+
+
+.about-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+
+
+
+.about-text{
+
+text-align:center;
+
+}
+
+
+
+
+
+/* GALLERY */
+
+
+.gallery-grid{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.gallery-grid img{
+
+height:230px;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+padding:35px 5%;
+
+}
+
+
+
+.social-icons a{
+
+font-size:22px;
+
+}
+
+
+
+
+
+/* WHATSAPP */
+
+
+.floating-whatsapp{
+
+width:55px;
+
+height:55px;
+
+right:15px;
+
+bottom:15px;
+
+font-size:26px;
+
+}
+
+
+
+}
+/* ==================================================
+   MOBILE LAYOUT REFINEMENT — AUGUST 2026
+   Keep mobile pages compact and visually closer to
+   the desktop grid instead of stacking everything.
+   ================================================== */
+@media (max-width: 600px){
+  /* Keep content beside each other where practical */
+  .cards,
+  .product-grid,
+  .products-grid,
+  .services-grid,
+  .gallery-grid,
+  .contact-grid,
+  .market-grid,
+  .values-grid,
+  .hero-stats,
+  .livestock-grid,
+  .poultry-grid,
+  .horticulture-grid,
+  .apiculture-grid,
+  .advisory-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:14px;
+  }
+
+  .hero-stats{
+    width:92%;
+    margin:-35px auto 45px;
+    padding:16px;
+    gap:10px;
+  }
+
+  .stat-box{
+    gap:9px;
+    padding:10px 7px;
+  }
+
+  .stat-box .icon{
+    width:42px;
+    height:42px;
+    font-size:18px;
+  }
+
+  .stat-box h2{font-size:23px;}
+  .stat-box h4{font-size:13px;}
+  .stat-box p{font-size:12px; margin-bottom:0;}
+
+  /* Make cards compact instead of creating a very long page */
+  .service-card,
+  .product-card,
+  .service-box,
+  .product-box,
+  .advisory-card,
+  .contact-card,
+  .livestock-card,
+  .poultry-card,
+  .horticulture-card,
+  .apiculture-card{
+    min-width:0;
+  }
+
+  .service-box,
+  .advisory-card{
+    padding:22px 14px;
+  }
+
+  .service-box h3,
+  .advisory-card h3{font-size:19px;}
+
+  .service-box p,
+  .advisory-card p,
+  .contact-card p,
+  .livestock-card p,
+  .poultry-card p,
+  .horticulture-card p,
+  .apiculture-card p{
+    font-size:13px;
+    line-height:1.55;
+  }
+
+  .product-card img,
+  .product-image img{
+    height:155px;
+  }
+
+  .gallery-grid img{
+    height:165px;
+    border-radius:12px;
+  }
+
+  .gallery-section{
+    width:94%;
+    margin:38px auto;
+  }
+
+  /* Keep CTA buttons side-by-side like desktop */
+  .hero-buttons,
+  .cta-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+  }
+
+  .hero-buttons button,
+  .hero-buttons a,
+  .cta-buttons button,
+  .cta-buttons a,
+  button{
+    width:auto;
+    min-width:0;
+    margin:4px;
+  }
+
+  .cta-btn,
+  .cta-btn-outline{
+    padding:11px 15px;
+    font-size:13px;
+  }
+
+  section{padding:35px 4%;}
+  section h2{font-size:27px; margin-bottom:20px;}
+
+  .about-container{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .about-image img{height:auto;}
+
+  .gallery-closing h2{font-size:30px;}
+}
+
+@media (max-width: 380px){
+  .cards,
+  .product-grid,
+  .products-grid,
+  .services-grid,
+  .gallery-grid,
+  .contact-grid,
+  .market-grid,
+  .values-grid,
+  .hero-stats,
+  .livestock-grid,
+  .poultry-grid,
+  .horticulture-grid,
+  .apiculture-grid,
+  .advisory-grid{
+    gap:10px;
+  }
+
+  .service-box,
+  .advisory-card{padding:18px 10px;}
+  .product-card img,
+  .product-image img{height:135px;}
+  .gallery-grid img{height:145px;}
+}
+
+/* ==================================================
+   MOBILE REBUILD — AUGUST 2026
+   Final mobile layout: preserve the desktop visual
+   hierarchy without squeezing desktop typography into
+   narrow two-column text blocks.
+   ================================================== */
+@media (max-width: 600px){
+  html, body { width:100%; max-width:100%; overflow-x:hidden; }
+
+  /* Header */
+  header{
+    min-height:68px;
+    padding:10px 18px;
+    gap:10px;
+  }
+  .logo-area img{width:46px;height:46px;}
+  .logo-area h2{font-size:17px;line-height:1.15;}
+  .menu-icon{font-size:27px;color:#111;}
+  nav{
+    top:68px;
+    left:0;
+    width:100%;
+    padding:10px 18px 16px;
+    gap:0;
+    max-height:calc(100vh - 68px);
+    overflow-y:auto;
+  }
+  nav a{padding:10px 4px;font-size:14px;}
+
+  /* Hero: keep the premium desktop feel, but fit the screen. */
+  .hero-slider{height:68vh;min-height:460px;max-height:620px;}
+  .hero-content{
+    left:0;
+    right:0;
+    top:50%;
+    width:100%;
+    max-width:none;
+    padding:20px 24px;
+    text-align:center;
+  }
+  .hero-content h1,.hero-content h2{
+    font-size:32px !important;
+    line-height:1.12 !important;
+    margin-bottom:18px;
+  }
+  .hero-content p{
+    font-size:15px !important;
+    line-height:1.5 !important;
+    margin:0 auto 22px;
+    max-width:330px;
+  }
+  .hero-buttons{
+    justify-content:center;
+    gap:8px;
+  }
+  .hero-buttons .btn{
+    padding:12px 15px;
+    font-size:13px;
+    gap:7px;
+    min-height:44px;
+  }
+  .slider-btn{width:42px;height:42px;font-size:16px;}
+  .prev{left:12px}.next{right:12px;}
+  .slider-dots{bottom:16px;gap:8px;}
+  .dot{width:9px;height:9px;}
+  .dot.active{width:26px;}
+
+  /* Stats: compact 2 x 2 cards, not giant vertical badges. */
+  .hero-stats{
+    width:calc(100% - 28px);
+    margin:-24px auto 30px;
+    padding:12px;
+    border-radius:22px;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:10px !important;
+  }
+  .stat-badge{width:100%;}
+  .badge{
+    width:100%;
+    min-height:0;
+    height:205px;
+    padding:16px 9px;
+    border-radius:26px;
+    border-width:2px;
+  }
+  .badge-icon{
+    width:54px;height:54px;
+    font-size:25px;
+    margin-bottom:11px;
+  }
+  .badge-number{
+    font-size:42px;
+    line-height:1;
+    margin-bottom:11px;
+    white-space:nowrap;
+  }
+  .badge-divider{width:55px;height:2px;margin-bottom:11px;}
+  .badge-title{font-size:14px;line-height:1.3;}
+
+  /* Standard page sections */
+  section{padding:42px 18px;}
+  section h2{font-size:27px;line-height:1.2;margin-bottom:20px;}
+
+  /* Image/text feature sections: stack cleanly on narrow screens.
+     This prevents the desktop heading from being squeezed into a tiny column. */
+  .about-preview,
+  .why-section,
+  .about-container,
+  .livestock-enterprise,
+  .poultry-enterprise,
+  .horticulture-enterprise,
+  .apiculture-enterprise,
+  .advisory-enterprise,
+  .contact-grid{
+    width:100%;
+    max-width:none;
+    margin:28px 0;
+    padding-left:18px;
+    padding-right:18px;
+    grid-template-columns:1fr !important;
+    gap:26px !important;
+  }
+  .about-image,.about-text,.why-image,.why-content,
+  .livestock-enterprise-image,.livestock-enterprise-content{
+    width:100%;
+    min-width:0;
+  }
+  .about-image{height:auto;}
+  .about-image img,
+  .why-image img{
+    width:100%;
+    height:240px !important;
+    min-height:0 !important;
+    object-fit:cover;
+    border-radius:20px;
+  }
+  .about-text{
+    display:block;
+    text-align:left;
+  }
+  .section-tag{font-size:11px;padding:7px 12px;margin-bottom:12px;}
+  .about-text h2{
+    font-size:29px !important;
+    line-height:1.18 !important;
+    margin:0 0 17px;
+  }
+  .about-text p,
+  .why-content > p{
+    font-size:15px !important;
+    line-height:1.7 !important;
+    margin-bottom:16px;
+  }
+
+  /* Cards: retain a desktop-like grid, but keep every card readable. */
+  .cards,.product-grid,.products-grid,.services-grid,
+  .gallery-grid,.values-grid,.market-grid,
+  .livestock-grid,.poultry-grid,.horticulture-grid,
+  .apiculture-grid,.advisory-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:12px !important;
+  }
+  .product-box,.service-card,.product-card,.service-box,
+  .advisory-card,.livestock-card,.poultry-card,
+  .horticulture-card,.apiculture-card{min-width:0;}
+  .product-box{height:auto;}
+  .product-image img,.product-card img{height:150px !important;object-fit:cover;}
+  .product-content{padding:12px;}
+  .product-content h3,.product-card h3,.service-card h3{font-size:18px;line-height:1.2;}
+  .product-content p,.product-card p,.service-card p{font-size:12.5px;line-height:1.5;}
+  .product-content a{font-size:12px;}
+
+  /* Gallery */
+  .gallery-section{width:100%;margin:25px 0;}
+  .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important;}
+  .gallery-grid img{height:150px !important;border-radius:12px;}
+
+  /* About-page specific grids */
+  .about-page .founder,
+  .about-page .foundation{grid-template-columns:1fr !important;gap:25px;}
+  .about-page .founder{padding:45px 18px;}
+  .about-page .founder-text h1{font-size:31px;line-height:1.2;}
+  .about-page .timeline-box{grid-template-columns:repeat(2,1fr) !important;gap:20px;}
+  .about-page .timeline-box h3{font-size:16px;}
+  .about-page .foundation{padding:45px 18px;}
+  .about-page .info-card{padding:22px;}
+
+  /* Why-us feature list stays compact. */
+  .why-features{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .why-item{min-width:0;}
+  .why-item h3{font-size:16px;line-height:1.2;}
+  .why-item p{font-size:12px;line-height:1.45;}
+  .why-icon{width:42px;height:42px;font-size:16px;}
+
+  /* Buttons */
+  button{width:auto;max-width:100%;margin:4px;padding:11px 17px;font-size:13px;}
+  .cta-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;}
+  .cta-buttons a,.cta-buttons button{width:auto;min-width:140px;}
+
+  /* Footer */
+  .site-footer{padding:42px 18px 0;}
+  .site-footer .footer-container{grid-template-columns:1fr;gap:28px;}
+}
+
+@media (max-width:380px){
+  .hero-slider{min-height:440px;}
+  .hero-content h1,.hero-content h2{font-size:28px !important;}
+  .hero-buttons .btn{padding:11px 12px;font-size:12px;}
+  .badge{height:190px;padding:13px 7px;}
+  .badge-icon{width:48px;height:48px;font-size:22px;}
+  .badge-number{font-size:37px;}
+  .badge-title{font-size:13px;}
+  .about-text h2{font-size:26px !important;}
+  .why-features{grid-template-columns:1fr;}
+}
+
+/* ==================================================
+   MOBILE PAGE-HERO TYPOGRAPHY
+   ================================================== */
+@media (max-width:600px){
+  .about-page .about-hero,
+  .livestock-hero,
+  .poultry-hero,
+  .horticulture-hero,
+  .apiculture-hero,
+  .advisory-hero,
+  .gallery-hero,
+  .contact-hero,
+  .market-hero{
+    min-height:52vh;
+    height:auto;
+    padding:70px 20px;
+  }
+  .about-hero-content,
+  .livestock-hero-content,
+  .poultry-hero-content,
+  .horticulture-hero-content,
+  .apiculture-hero-content,
+  .advisory-hero-content,
+  .gallery-hero-content,
+  .contact-hero-content,
+  .market-hero-content{
+    width:100%;
+    max-width:100%;
+    padding:0 10px;
+    text-align:center;
+  }
+  .about-hero-content h1,
+  .livestock-hero-content h1,
+  .poultry-hero-content h1,
+  .horticulture-hero-content h1,
+  .apiculture-hero-content h1,
+  .advisory-hero-content h1,
+  .gallery-hero-content h1,
+  .contact-hero-content h1,
+  .market-hero-content h1{
+    font-size:34px !important;
+    line-height:1.12 !important;
+  }
+  .about-hero-content p,
+  .livestock-hero-content p,
+  .poultry-hero-content p,
+  .horticulture-hero-content p,
+  .apiculture-hero-content p,
+  .advisory-hero-content p,
+  .gallery-hero-content p,
+  .contact-hero-content p,
+  .market-hero-content p{
+    font-size:14px !important;
+    line-height:1.55 !important;
+  }
+
+  /* Enterprise cards use two columns on mobile, while their text/image
+     remains compact enough to be readable. */
+  .livestock-enterprises,
+  .poultry-enterprises,
+  .horticulture-enterprises,
+  .apiculture-enterprises,
+  .advisory-services{
+    width:calc(100% - 36px);
+    margin:40px auto;
+  }
+  .livestock-card-image,
+  .poultry-card-image,
+  .horticulture-card-image,
+  .apiculture-card-image{height:155px;}
+  .livestock-card-content,
+  .poultry-card-content,
+  .horticulture-card-content,
+  .apiculture-card-content{padding:14px;}
+  .livestock-card-content h3,
+  .poultry-card-content h3,
+  .horticulture-card-content h3,
+  .apiculture-card-content h3{font-size:19px;line-height:1.2;}
+  .livestock-card-content p,
+  .poultry-card-content p,
+  .horticulture-card-content p,
+  .apiculture-card-content p{font-size:12.5px;line-height:1.5;}
+  .advisory-card{padding:20px 12px;}
+  .advisory-card-content h3{font-size:18px;line-height:1.2;}
+  .advisory-card-content p{font-size:12.5px;line-height:1.5;}
+}
