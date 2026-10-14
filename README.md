@@ -1,23 +1,18 @@
 # Mkanga-Ulimi Farm Website
 
-A professional agricultural website for Mkanga-Ulimi Farm.
+A responsive static website for Mkanga-Ulimi Farm, built with HTML, CSS and JavaScript.
 
 ## Features
+- Farm information and services
+- Product catalogue and searchable Market page
+- Quantity controls, shopping cart and WhatsApp order handoff
+- Farm photo gallery
+- Contact information and responsive mobile layout
 
-- Farm information
-- Product showcase
-- Gallery
-- WhatsApp ordering
-- Contact form
-- Responsive mobile design
-- Social media integration
+## Content management
+This is a static site without an admin dashboard. Product listings are managed in `assets/js/products.js`; gallery entries are managed in `gallery.html`; photos are stored in `assets/images/`.
+
+**Before publishing edits, read [`DEPLOYMENT-AND-CONTENT-GUIDE.md`](DEPLOYMENT-AND-CONTENT-GUIDE.md)** for step-by-step instructions on managing products, images, gallery photos and deployment.
 
 ## Technologies
-
-- HTML5
-- CSS3
-- JavaScript
-
-## Developer
-
-Mkanga-Ulimi Farm
+HTML5, CSS3 and JavaScript.

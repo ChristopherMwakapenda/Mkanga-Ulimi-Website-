@@ -903,6 +903,51 @@
        CART HEADER
     ====================================================== */
 
+    .continue-shopping {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 0;
+      background: transparent;
+      color: #667a3e;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 0;
+      cursor: pointer;
+      min-height: 44px;
+      white-space: nowrap;
+    }
+
+    .continue-shopping:hover,
+    .continue-shopping:focus-visible {
+      text-decoration: underline;
+    }
+
+    .cart-header h2 {
+      font-size: 21px;
+    }
+
+    @media (max-width: 480px) {
+      .cart-panel {
+        padding: 18px 16px;
+        width: 100%;
+      }
+      .cart-header {
+        gap: 8px;
+      }
+      .continue-shopping {
+        font-size: 13px;
+      }
+      .cart-header h2 {
+        font-size: 18px;
+      }
+      .close-cart {
+        min-width: 40px;
+        min-height: 44px;
+      }
+    }
+
     .cart-header {
 
       display:
@@ -1674,19 +1719,27 @@
 
       <div class="cart-header">
 
+        <button
+          class="continue-shopping"
+          type="button"
+          onclick="closeCart()"
+          aria-label="Back to market and continue shopping"
+        >
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          <span>Continue shopping</span>
+        </button>
+
         <h2>
           Your Cart
         </h2>
 
-
         <button
           class="close-cart"
+          type="button"
           onclick="closeCart()"
           aria-label="Close shopping cart"
         >
-
           &times;
-
         </button>
 
       </div>
