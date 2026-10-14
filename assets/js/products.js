@@ -70,7 +70,7 @@ const MARKET_PRODUCTS = [
     category: "poultry",
     categoryName: "Poultry",
     description: "Farm-raised pigeons available for sale.",
-    image: "assets/images/pigeons.jpg",
+    image: "assets/images/Pigeons.jpg",
     price: null,
     priceDisplay: "Price on Enquiry",
     unit: "per bird",
@@ -115,20 +115,6 @@ const MARKET_PRODUCTS = [
     unit: "per bird",
     available: true
   },
-
-  {
-    id: "eggs",
-    name: "Farm Eggs",
-    category: "poultry",
-    categoryName: "Poultry",
-    description: "Fresh farm eggs available for sale.",
-    image: "assets/images/eggs.jpg",
-    price: null,
-    priceDisplay: "Price on Enquiry",
-    unit: "per tray",
-    available: true
-  },
-
 {
   id: "tomatoes",
   name: "Fresh Tomatoes",
@@ -136,7 +122,7 @@ const MARKET_PRODUCTS = [
   categoryName: "Horticulture",
   description: "Freshly harvested tomatoes from our farm.",
   image: "assets/images/tomatoes.jpg",
-  price: 2500,
+  price: 10500,
   priceDisplay: "MWK 10,500",
   unit: "per kg",
   available: true
